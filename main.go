@@ -199,11 +199,7 @@ func (s Swimming) TrainingInfo() InfoMessage {
 
 // ReadData возвращает информацию о проведенной тренировке.
 func ReadData(training CaloriesCalculator) string {
-	calories := training.Calories()
-	info := training.TrainingInfo()
-	info.Calories = calories
-
-	return fmt.Sprint(info)
+	return fmt.Sprint(training.TrainingInfo())
 }
 
 func main() {
