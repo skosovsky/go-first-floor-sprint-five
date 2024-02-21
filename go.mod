@@ -1,3 +1,3 @@
-module github.com/Yandex-Practicum/go-1fl-homework-sprint5
+module github.com/skosovsky/go-first-floor-sprint-five
 
-go 1.20
+go 1.22.0
