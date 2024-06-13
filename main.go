@@ -235,13 +235,13 @@ func main() {
 	swimming := Swimming{
 		Training: Training{
 			TrainingType: "Плавание",
-			Action:       2000, //nolint:gomnd // it's data
+			Action:       2000, //nolint:mnd // it's data
 			LenStep:      SwimmingLenStep,
-			Duration:     90 * time.Minute, //nolint:gomnd // it's data
-			Weight:       85,               //nolint:gomnd // it's data
+			Duration:     90 * time.Minute, //nolint:mnd // it's data
+			Weight:       85,               //nolint:mnd // it's data
 		},
-		LengthPool: 50, //nolint:gomnd // it's data
-		CountPool:  5,  //nolint:gomnd // it's data
+		LengthPool: 50, //nolint:mnd // it's data
+		CountPool:  5,  //nolint:mnd // it's data
 	}
 
 	fmt.Println(ReadData(swimming)) //nolint:forbidigo // it's output
@@ -249,12 +249,12 @@ func main() {
 	walking := Walking{
 		Training: Training{
 			TrainingType: "Ходьба",
-			Action:       20000, //nolint:gomnd // it's data
+			Action:       20000, //nolint:mnd // it's data
 			LenStep:      LenStep,
 			Duration:     3*time.Hour + 45*time.Minute,
-			Weight:       85, //nolint:gomnd // it's data
+			Weight:       85, //nolint:mnd // it's data
 		},
-		Height: 185, //nolint:gomnd // it's data
+		Height: 185, //nolint:mnd // it's data
 	}
 
 	fmt.Println(ReadData(walking)) //nolint:forbidigo // it's output
@@ -262,10 +262,10 @@ func main() {
 	running := Running{
 		Training: Training{
 			TrainingType: "Бег",
-			Action:       5000, //nolint:gomnd // it's data
+			Action:       5000, //nolint:mnd // it's data
 			LenStep:      LenStep,
-			Duration:     30 * time.Minute, //nolint:gomnd // it's data
-			Weight:       85,               //nolint:gomnd // it's data
+			Duration:     30 * time.Minute, //nolint:mnd // it's data
+			Weight:       85,               //nolint:mnd // it's data
 		},
 	}
 
